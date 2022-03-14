@@ -1,0 +1,246 @@
+/****** REUSABLE CSS PROPOERTIES *******/
+:root {
+    --main-bg-color: rgba(0, 0, 0, 0.8);
+    --header-bg-color:  #2c3e50;
+    --btn-bg-color: lightseagreen;
+}
+
+/****** COMMON TAG STYLES *******/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c8cab799;
+    color: #666666;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ###### COMMON REUSABLE CLASSES START ###### */
+
+
+.btn-green {
+    background-color: #02e5a1;
+}
+
+.caption {
+    background-color: #183a1d;
+    /* background-color: var(--header-bg-color); */
+    color: #eeeeee;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* ###### COMMON REUSABLE CLASSES END ###### */
+
+
+/****** HEADER SECTION *******/
+
+.header {
+    height: 47%;
+    left: 0px;
+    top: 0px;
+    /* background: var(--header-bg-color); */
+    padding: 42px;
+}
+
+.logo {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 60px;
+}
+
+.nav-item {
+    margin-right: 25px;
+    font-size: 16px;
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+.nav-item .nav-link {
+    color: #666666;
+}
+
+.nav-item .fa {
+    margin-right: 5px;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 14px;
+    text-align: center;
+    width: 120px;
+    line-height: 2;
+    background-color: var(--btn-bg-color);
+}
+
+.login .fa{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.menubar {
+    display: none;
+}
+
+/****** MAIN SECTION *******/
+.main {
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.recent-posts {
+    background: #e1eedd;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/****** FOOTER SECTION *******/
+
+.footer-section {
+    width: 25%;
+    height: 213px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-content-holder {
+    justify-content: center;
+}
+
+.footer-section img {
+    width: 62%;
+}
+
+.site-logo p {
+    font-size: 35px;
+    color: darkslateblue;
+    line-height: 2;
+    font-family: cursive;
+}
+
+.social-icons-container {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .header {
+        padding: 10px;
+    }
+
+    .navbar {
+        width: 98%;
+    }
+    .top-news-section,
+    .players-info-section,
+    .clubs-info-section {
+        width: calc(100% - 20px);
+        background: lightgrey;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .players-container,
+    .clubs-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+        row-gap: 20px;
+        column-gap: 20px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .navitems:not(:last-child) {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .intro-section  {
+        flex-direction: column;
+    }
+
+    .intro-section .item1 {
+        margin-bottom: 40px;
+    }
+
+    .intro-quote {
+        margin-bottom: 25px;
+    }
+
+    .small-news-card {
+        display: none;
+    }
+
+    .slider-dot-design label:first-child {
+        display: none;
+    }
+
+    .slider-dot-design label:last-child {
+        display: none;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .site-logo {
+        justify-content: center;
+    }
+
+    .site-logo img {
+        width: 50%;
+    }
+
+}
+
+.rounded-img {
+    width: 60px;
+    height: 60px;
+}
